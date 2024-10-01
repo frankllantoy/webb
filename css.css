@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+}
+
+canvas {
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f4f5f7;
+    font-family: "Impact,Charcoal,sans-serif";
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f4f6f7;
+    font-family: "Impact,Charcoal,sans-serif";
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilos para el video centrado */
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+video {
+    width: 80%; /* Ajusta el tamaño según sea necesario */
+    border-radius: 10px;
+}
+
+/* Contenedor para centrar el botón */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para el botón "Leer más" */
+.read-more-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #90b5ce; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto */
+    font-size: 1.2em;
+    font-family: "Impact,Charcoal,sans-serif";
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #2980b9; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Animación de aumento */
+}
